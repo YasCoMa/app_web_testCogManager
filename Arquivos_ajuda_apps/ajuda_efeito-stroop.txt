@@ -1,0 +1,11 @@
+﻿Neste teste você terá um determinado número de tentativas para dizer qual é a COR da palavra apresentada, sendo que o conteúdo das mesmas podem ou não, quando lidas, o valor da cor que ela está.
+
+Instruções:
+
+1-Pressione o botão Ir;
+2-Digite seus dados e pressione continuar;
+3-Digite o código do grupo informado por quem está administrando a bateria de testes ou clique em começar teste aleatório e então irá carregar as configurações; 
+4-Preste atenção na COR da palavra que irá ser mostrada, então responda qual é a cor da palavra usando as teclas ou os botões correspondentes às possíveis cores;
+5-Então aparecerá a correção da resposta dada.
+
+Boa sorte! 

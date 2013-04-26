@@ -1,0 +1,104 @@
+        <html xmlns:o="urn:schemas-microsoft-com:office:office"
+               xmlns:x="urn:schemas-microsoft-com:office:excel"
+                xmlns="http://www.w3.org/TR/REC-html40">
+
+                <head>
+                <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+                <meta name=ProgId content=Excel.Sheet>
+                <!--[if gte mso 9]><xml>
+                 <o:DocumentProperties>
+                  <o:LastAuthor>Sriram</o:LastAuthor>
+                  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+                  <o:Version>10.2625</o:Version>
+                 </o:DocumentProperties>
+                 <o:OfficeDocumentSettings>
+                  <o:DownloadComponents/>
+                 </o:OfficeDocumentSettings>
+                </xml><![endif]-->
+                <style>
+                <!--table
+                    {mso-displayed-decimal-separator:"\.";
+                    mso-displayed-thousand-separator:"\,";}
+                @page
+                    {margin:1.0in .75in 1.0in .75in;
+                    mso-header-margin:.5in;
+                    mso-footer-margin:.5in;}
+                tr
+                    {mso-height-source:auto;}
+                col
+                    {mso-width-source:auto;}
+                br
+                    {mso-data-placement:same-cell;}
+                .style0
+                    {mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    white-space:nowrap;
+                    mso-rotate:0;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    border:none;
+                    mso-protection:locked visible;
+                    mso-style-name:Normal;
+                    mso-style-id:0;}
+                td
+                    {mso-style-parent:style0;
+                    padding-top:1px;
+                    padding-right:1px;
+                    padding-left:1px;
+                    mso-ignore:padding;
+                    color:windowtext;
+                    font-size:10.0pt;
+                    font-weight:400;
+                    font-style:normal;
+                    text-decoration:none;
+                    font-family:Arial;
+                    mso-generic-font-family:auto;
+                    mso-font-charset:0;
+                    mso-number-format:General;
+                    text-align:general;
+                    vertical-align:bottom;
+                    border:none;
+                    mso-background-source:auto;
+                    mso-pattern:auto;
+                    mso-protection:locked visible;
+                    white-space:nowrap;
+                    mso-rotate:0;}
+                .xl24
+                    {mso-style-parent:style0;
+                    white-space:normal;}
+                -->
+                </style>
+                <!--[if gte mso 9]><xml>
+                 <x:ExcelWorkbook>
+                  <x:ExcelWorksheets>
+                   <x:ExcelWorksheet>
+                    <x:Name>NOME_PLANILHA</x:Name>
+                    <x:WorksheetOptions>
+                     <x:Selected/>
+                     <x:ProtectContents>False</x:ProtectContents>
+                     <x:ProtectObjects>False</x:ProtectObjects>
+                     <x:ProtectScenarios>False</x:ProtectScenarios>
+                    </x:WorksheetOptions>
+                   </x:ExcelWorksheet>
+                  </x:ExcelWorksheets>
+                  <x:WindowHeight>10005</x:WindowHeight>
+                  <x:WindowWidth>10005</x:WindowWidth>
+                  <x:WindowTopX>120</x:WindowTopX>
+                  <x:WindowTopY>135</x:WindowTopY>
+                  <x:ProtectStructure>False</x:ProtectStructure>
+                  <x:ProtectWindows>False</x:ProtectWindows>
+                 </x:ExcelWorkbook>
+                </xml><![endif]-->
+                </head>
+
+                <body link=blue vlink=purple>
+                <table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 >Relatório completo: </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Dados de configuração: </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Nome do avaliador</td><td class=xl24 width=64 >Tempo de apresentação</td><td class=xl24 width=64 >Trio de cores</td><td class=xl24 width=64 >Forma de apresentação</td><td class=xl24 width=64 >Modo de resposta</td></tr><tr><td class=xl24 width=64 >Yasmmin Martins </td><td class=xl24 width=64 >3</td><td class=xl24 width=64 >amarelo_azul_e_vermelho</td><td class=xl24 width=64 >misturar_os_dois</td><td class=xl24 width=64 >teclado_a_s_d</td></tr><tr><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Dados da pessoa: </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Nome</td><td class=xl24 width=64 >Idade</td><td class=xl24 width=64 >Sexo</td><td class=xl24 width=64 >Usa computador</td><td class=xl24 width=64 >Dominância manual</td></tr><tr><td class=xl24 width=64 >Eugenyia</td><td class=xl24 width=64 >21</td><td class=xl24 width=64 >feminino</td><td class=xl24 width=64 >sim</td><td class=xl24 width=64 >esquerdo</td></tr><tr><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Dados da bateria: </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Código do grupo</td><td class=xl24 width=64 >Médias parciais dos tempos para os níveis</td><td class=xl24 width=64 >Médias parciais de acertos para os níveis</td><td class=xl24 width=64 >Modo</td><td class=xl24 width=64 >Data</td></tr><tr><td class=xl24 width=64 >2</td><td class=xl24 width=64 >870</td><td class=xl24 width=64 >1</td><td class=xl24 width=64 >fixo</td><td class=xl24 width=64 >26/03/2013</td></tr><tr><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Dados das seções: </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td><td class=xl24 width=64 > </td></tr><tr><td class=xl24 width=64 >Cor da palavra</td><td class=xl24 width=64 >Conteúdo da palavra</td><td class=xl24 width=64 >Resposta obtida</td><td class=xl24 width=64 >Tempo de resposta</td><td class=xl24 width=64 >Correção</td><td class=xl24 width=64 >Quantidade de elementos</td><td class=xl24 width=64 >Código</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >1180.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >70</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >1010.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >71</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >1070.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >72</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >710.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >73</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >970.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >74</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >1620.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >75</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >790.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >76</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >890.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >77</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >880.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >78</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >810.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >79</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >670.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >80</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >940.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >81</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >1010.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >82</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >920.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >83</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >810.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >84</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >720.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >85</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >940.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >86</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >630.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >87</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >780.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >88</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >740.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >89</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >920.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >90</td></tr><tr><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >amarelo</td><td class=xl24 width=64 >550.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >91</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >820.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >92</td></tr><tr><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >680.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >93</td></tr><tr><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >azul</td><td class=xl24 width=64 >vermelho</td><td class=xl24 width=64 >690.000</td><td class=xl24 width=64 >certo</td><td class=xl24 width=64 >0</td><td class=xl24 width=64 >94</td></tr></table></body></html>

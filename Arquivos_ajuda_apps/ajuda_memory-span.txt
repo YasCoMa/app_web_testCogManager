@@ -1,0 +1,12 @@
+﻿Neste teste você terá que visualizar uma sequência de elementos (números, letras ou palavras) separadamente e depois terá de pressionar os botões correspondentes à sequência visualizada na mesma ordem que apareceram. 
+
+Instruções: 
+
+1-Pressione o botão Ir; 
+2-Digite seus dados e pressione continuar; 
+3-Digite o código do grupo informado por quem está administrando a bateria de testes ou clique em começar teste aleatório e então irá carregar as configurações; 
+4-Preste atenção em cada elemento mostrado e tente memorizar a sequência; 
+5-Pressione os botões correspondentes aos elementos da sequência na mesma ordem em que apareceram anteriormente.
+5-Então aparecerá a correção da resposta dada. 
+
+Boa sorte! 

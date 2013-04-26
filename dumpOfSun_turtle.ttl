@@ -1,0 +1,921 @@
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://rdfa.info/play/>
+   rdfa:usesVocabulary <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#>;
+   foaf:workplaceHomepage <http://www.iff.edu.br>;
+   foaf:homepage <http://rdfa.info/play/indice.php>;
+   dc:title "Ykirá";
+   og:description """Este site contém testes para fazer a avaliação de funções cognitivas como a memória, atenção, raciocínio lógico, etc., estes testes são dirigidos a uso de pesquisadores 
+												com um grupo de pessoas, mas neste site qualquer um pode experimentar e ver suas descrições, além disso provê para os pesquisadores uma área para vizualização, controle e 
+												análise de resultados, além de configurações de parâmetros para os testes disponibilizados.""";
+   dc:creator <http://rdfa.info/play/#adminSite_me> .
+<http://rdfa.info/play/indice.php>
+   og:image "imagens/cabecalho_e_fundo/ykira.jpg" .
+<http://rdfa.info/play/#adminSite_me>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Yasmmin Côrtes Martins";
+   owl:sameAs <http://yasmmin.4sql.net/foaf_me.rdf#me>;
+   foaf:schoolHomepage "http://iff.edu.br";
+   foaf:account <http://rdfa.info/play/#fb_me>;
+   foaf:account <http://rdfa.info/play/#twitter_me>;
+   foaf:mbox <mailto:yasmmincm@hotmail.com> .
+<http://rdfa.info/play/#fb_me>
+   rdf:type foaf:OnlineAccount;
+   foaf:accountServiceHomepage <https://www.facebook.com/yasmmin.martins> .
+<http://rdfa.info/play/#twitter_me>
+   rdf:type foaf:OnlineAccount;
+   foaf:accountServiceHomepage <https://twitter.com/yasmminPlovets> .
+<http://rdfa.info/play/#tt_1>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Sternberg Search";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Memória";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> """Este teste permite avaliar se a pessoa percebeu que um elemento estava contido em uma determinada série de números, letras ou palavras, entre 1 a 9, previamente visualizada, medindo a memória de curto prazo
+									      de acordo com o tempo que a pessoa levou para localizar aquele elemento no conjunto em memória.""" .
+<http://rdfa.info/play/#tt_2>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Efeito Stroop";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Atenção";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> """Este teste permite avaliar se a pessoa consegue reter sua atenção apenas à cor sem deixar o significado da palavra com aquela cor interferir
+									                     na sua resposta. Esperando pela resposta da cor do estímulo.""" .
+<http://rdfa.info/play/#tt_3>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Memory Span";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Memória";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> """Este teste serve para avaliar a capacidade de memorizar uma lista de números, palavras ou letras 
+									dentro de um tempo.""";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_description> """Neste teste são apresentados separadamente elementos de uma sequência e o usuário depois, dentro de 
+									um tempo, deve listar na mesma ordem os elementos anteriores""" .
+<http://rdfa.info/play/#profileTest_1>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "27/08/2012";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_administrator> <http://rdfa.info/play/#adminTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_typeTest> <http://rdfa.info/play/#typeTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_value_config> "4-4-palavras_helicoptero, asteroide, kilimanjaro, dromedario, libelula, borboleta, leao, largato, everest-3";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_answer> "teclado_s_n";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_attempts> "3" .
+<http://rdfa.info/play/#profileTest_2>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "04/03/2013";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_administrator> <http://rdfa.info/play/#adminTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_typeTest> <http://rdfa.info/play/#typeTest_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_value_config> "3-amarelo_azul_e_vermelho-misturar_os_dois";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_answer> "teclado_a_s_d";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_attempts> "25" .
+<http://rdfa.info/play/#profileTest_3>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "15/03/2013";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_administrator> <http://rdfa.info/play/#adminTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_typeTest> <http://rdfa.info/play/#typeTest_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_value_config> "6-4-5-palavras_helicoptero, asteroide, kilimanjaro, dromedario, libelula, borboleta, leao, largato, everest";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_answer> "mouse";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_attempts> "5" .
+<http://rdfa.info/play/#battery_1>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "720_746.6666666666666_129";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "1_0.3333333333333333_0.33";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013" .
+<http://rdfa.info/play/#battery_2>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "300_696.6666666666666";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "1_0.6666666666666666";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013" .
+<http://rdfa.info/play/#battery_3>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "843.6";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "0.96";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013" .
+<http://rdfa.info/play/#battery_4>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "640_816.6666666666666_520_962";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "1_1_1_0.2";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "aleatorio";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013" .
+<http://rdfa.info/play/#battery_5>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "4580";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "0.6";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013" .
+<http://rdfa.info/play/#battery_6>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "masculino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "4984";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "0.6";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013" .
+<http://rdfa.info/play/#battery_7>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest> <http://rdfa.info/play/#profileTest_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#> "feminino";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_time> "870";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes> "1";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control> "fixo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013" .
+<http://rdfa.info/play/#session_1>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  ;Sonda- dromedário";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "920.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:06:03";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_2>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- asteróide  ;Sonda-helicóptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "520.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:06:19";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_3>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- dromedário   libélula  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1490.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:06:40";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_4>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- dromedário   asteróide  ;Sonda-helicóptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "sim";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "360.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:06:55";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_5>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_1>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- asteróide   kilimanjaro  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "sim";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "390.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:07:10";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_10>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- asteróide   dromedário  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "380.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:23:37";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_9>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-helicóptero   asteróide  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "840.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:23:24";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_8>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula   dromedário  ;Sonda- asteróide";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "sim";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "870.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:23:10";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_7>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- kilimanjaro  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "sim";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "300.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:22:54";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_6>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_2>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- kilimanjaro  ;Sonda- asteróide";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "300.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "14/02/2013 21:22:41";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_33>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "740.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:48";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_34>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "730.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:53";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_35>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1740.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:00";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_36>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "810.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:06";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_37>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1070.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:12";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_38>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "480.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:17";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_39>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "460.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:22";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_40>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "640.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:28";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_41>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "480.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:34";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_42>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "430.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:39";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_43>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "570.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:47:45";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_32>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1250.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:42";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_31>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "680.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:36";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_30>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "830.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:30";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_19>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "900.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:25";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_20>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "980.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:31";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_21>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "790.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:37";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_22>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "820.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:43";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_23>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "650.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:49";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_24>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1340.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:45:55";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_25>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "620.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:01";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_26>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "800.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:07";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_27>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "550.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:12";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_28>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1610.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:19";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_29>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_3>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1120.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "06/03/2013 21:46:25";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_53>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula   dromedário  helicóptero  ;Sonda- dromedário";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "560.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:45:28";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "3" .
+<http://rdfa.info/play/#session_54>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  helicóptero   kilimanjaro   dromedário   asteróide  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "530.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:45:43";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "5" .
+<http://rdfa.info/play/#session_55>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-helicóptero   libélula   dromedário   asteróide   kilimanjaro  ;Sonda- dromedário";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1230.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:45:58";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "5" .
+<http://rdfa.info/play/#session_56>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  helicóptero   dromedário   asteróide   kilimanjaro  ;Sonda- dromedário";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "360.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:46:11";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "5" .
+<http://rdfa.info/play/#session_57>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- kilimanjaro  helicóptero   libélula   dromedário   asteróide  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "2210.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:46:27";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "5" .
+<http://rdfa.info/play/#session_58>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- kilimanjaro   libélula   dromedário  helicóptero   asteróide  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "480.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:46:41";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "5" .
+<http://rdfa.info/play/#session_52>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula   kilimanjaro   asteróide  ;Sonda- asteróide";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "540.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:45:15";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "3" .
+<http://rdfa.info/play/#session_51>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  helicóptero   asteróide  ;Sonda-helicóptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "380.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:45:01";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "3" .
+<http://rdfa.info/play/#session_50>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- dromedário   libélula  helicóptero  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "480.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:44:48";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "3" .
+<http://rdfa.info/play/#session_49>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula   kilimanjaro  helicóptero  ;Sonda-helicóptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "640.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:44:34";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "3" .
+<http://rdfa.info/play/#session_48>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  helicóptero  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "570.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:44:19";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_47>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- kilimanjaro   libélula  ;Sonda- kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "640.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:44:06";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_46>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula   dromedário  ;Sonda- asteróide";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1240.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:43:52";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "2" .
+<http://rdfa.info/play/#session_45>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libélula  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao_respondeu";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "550.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:43:35";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_44>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_4>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- asteróide  ;Sonda- libélula";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "nao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "730.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "10/03/2013 19:43:21";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "1" .
+<http://rdfa.info/play/#session_64>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_5>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-X_T_G_B_Z";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "X_T_G_B_Z";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "3670.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013 17:25:35";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_63>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_5>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-Q_L_Y_X_R";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "Q_Y_X_L_";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "6000.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013 17:25:07";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_62>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_5>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-Z_C_H_T_B";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "Z_C_H_T_B";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "4040.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013 17:24:37";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_61>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_5>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-D_F_N_M_X";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "D_F_N_M_X";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "3600.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013 17:24:10";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_60>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_5>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-N_X_H_P_C";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "N_X_P_C_H";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "5590.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "16/03/2013 17:23:42";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_69>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_6>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- libelula_ dromedario_ asteroide_ everest_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> " libelula_ asteroide_ everest_ dromedario_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "5420.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 14:46:45";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_68>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_6>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-helicoptero_ everest_ largato_ dromedario_ kilimanjaro";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "helicoptero_ everest_ largato_ kilimanjaro_ dromedario";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "4320.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "errado";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 14:46:13";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_67>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_6>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia-helicoptero_ libelula_ borboleta_ everest_ leao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "helicoptero_ libelula_ borboleta_ everest_ leao";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "5350.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 14:45:41";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_66>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_6>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- borboleta_ asteroide_ everest_ leao_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> " borboleta_ asteroide_ everest_ leao_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "5400.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 14:45:09";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_65>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_6>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Sequencia- leao_ kilimanjaro_ asteroide_ borboleta_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> " leao_ kilimanjaro_ asteroide_ borboleta_helicoptero";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "4430.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 14:44:37";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_84>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "810.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:35";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_85>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "720.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:40";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_86>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "940.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:46";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_87>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "630.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:51";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_88>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "780.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:57";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_89>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "740.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:02";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_90>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "920.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:08";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_91>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "550.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:13";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_92>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "820.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:19";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_93>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "680.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:24";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_94>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "690.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:46:30";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_83>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "920.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:29";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_82>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1010.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:23";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_81>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "940.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:17";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_71>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1010.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:19";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_72>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1070.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:25";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_73>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "710.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:30";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_74>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "970.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:36";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_75>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1620.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:42";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_76>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "790.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:48";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_77>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "890.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:54";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_78>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-azul;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "880.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:00";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_79>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-amarelo;Conteudo-azul";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "810.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:06";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_80>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "670.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:45:11";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#session_70>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery> <http://rdfa.info/play/#battery_7>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given> "Cor-vermelho;Conteudo-amarelo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given> "vermelho";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer> "1180.000";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction> "certo";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date> "26/03/2013 16:44:13";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements> "0" .
+<http://rdfa.info/play/#typeTest_1>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Sternberg Search";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_description> "É um teste para saber se a pessoa consegue reconhecer um caracter dentro um conjunto previamente apresentado dentro de em determinado tempo.	";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Memória";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> "Perceber o nível de atenção que a pessoa consegue ter dentro de um tempo limitado.";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_field_config> "Tempo para a série de elementos:;Tempo para o elemento isolado:;Conteúdo da série:Números|Consoantes|Palavras#campo_lista;Tempo de resposta:";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_status> "adicionado" .
+<http://rdfa.info/play/#typeTest_2>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Efeito Stroop";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_description> "Responder corretamente qual é a cor do que está sendo mostrando independente se for uma palavra que tenha nome de cor.";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Atenção";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> "Avaliar a influência da interferência da leitura quanto à percepção da cor.";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_field_config> "Tempo de apresentação:;Trio de cores:Amarelo azul e vermelho|Branco rosa e marrom;Forma de apresentação:Congruentes|Incongruentes|Misturar os dois";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_status> "adicionado" .
+<http://rdfa.info/play/#typeTest_3>
+   rdf:type <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>;
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name> "Memory Span";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_description> "Neste teste são apresentados separadamente elementos de uma sequência e o usuário depois, dentro de um tempo, deve listar na mesma ordem os elementos anteriores";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area> "Memória";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective> "Este teste serve para avaliar a capacidade de memorizar uma lista de números, palavras ou letras dentro de um tempo.";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_field_config> "Tempo de resposta:;Tempo de apresentação:;Quantidade de elementos(Até 9):;Forma de apresentação:Números|Consoantes|Palavras#campo_lista";
+   <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_status> "adicionado" .

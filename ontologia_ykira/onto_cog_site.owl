@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<!DOCTYPE rdf:RDF [
+		<!ENTITY owl  "http://www.w3.org/2002/07/owl#">
+		<!ENTITY xsd  "http://www.w3.org/2001/XMLSchema#">
+		<!ENTITY foaf "http://www.xmlns.com/foaf/0.1/">
+	]>
+	
+	<rdf:RDF
+		xmlns="http://www.w3.org/2002/07/owl#"
+		xml:base="http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#"
+		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:dcterms="http://purl.org/dc/terms/"
+		xmlns:owl="http://www.w3.org/2002/07/owl#"
+		>
+		
+		<owl:Ontology rdf:about="">
+			<owl:versionInfo> 24/02/2013 </owl:versionInfo>
+			<rdfs:label> Cognitve Tests ontology </rdfs:label>
+			<rdfs:comment>An ontology for cognitive tests and execution data controlling of these tests</rdfs:comment>
+			<dcterms:creator rdf:resource="http://yasmmin.4sql.net/foaf_me.rdf#me"/>
+		</owl:Ontology>
+		
+		<owl:Class rdf:ID="administrator_site">
+			<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_name">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<owl:equivalentProperty rdf:resource="&foaf;name"/>
+			<rdfs:domain>
+				<owl:Class> 
+					<owl:unionOf rdf:parseType="Collection"> 
+						<owl:Class rdf:about="#administrator_test"/> 
+						<owl:Class rdf:about="#administrator_site"/>
+						<owl:Class rdf:about="#user"/>
+						<owl:Class rdf:about="#type_test"/>
+					</owl:unionOf> 
+				</owl:Class> 
+			</rdfs:domain>
+			
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_login">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain>
+				<owl:Class> 
+					<owl:unionOf rdf:parseType="Collection"> 
+						<owl:Class rdf:about="#administrator_test"/> 
+						<owl:Class rdf:about="#administrator_site"/>
+					</owl:unionOf> 
+				</owl:Class> 
+			</rdfs:domain>
+			
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_password">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain>
+				<owl:Class> 
+					<owl:unionOf rdf:parseType="Collection"> 
+						<owl:Class rdf:about="#administrator_test"/> 
+						<owl:Class rdf:about="#administrator_site"/>
+					</owl:unionOf> 
+				</owl:Class> 
+			</rdfs:domain>
+			
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="administrator_test">
+			<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_institute">
+			<rdfs:domain rdf:resource="#administrator_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_researchCore">
+			<rdfs:domain rdf:resource="#administrator_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="user">
+			<rdfs:subClassOf rdf:resource="&foaf;Person"/>
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_age">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<owl:equivalentProperty rdf:resource="&foaf;age"/>
+			<rdfs:domain rdf:resource="#administrator_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_gender">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<owl:equivalentProperty rdf:resource="&foaf;gender"/>
+			<rdfs:domain rdf:resource="#user"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="uses_computer">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#user"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="handedness">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#user"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="type_test">
+			<rdfs:subClassOf rdf:resource="&owl;Thing"/>
+			<dcterms:subject rdf:resource="http://dbpedia.org/resource/Category:Cognitive_tests" />
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_description">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#type_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_area">
+			<rdfs:domain rdf:resource="#type_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_objective">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#type_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="data_field_config">
+			<rdfs:domain rdf:resource="#type_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_status">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#type_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="profile_test">
+			<rdfs:subClassOf rdf:resource="&owl;Thing"/>
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_date">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain>
+				<owl:Class> 
+					<owl:unionOf rdf:parseType="Collection"> 
+						<owl:Class rdf:about="#profile_test"/> 
+						<owl:Class rdf:about="#battery"/>
+						<owl:Class rdf:about="#session"/>
+						<owl:Class rdf:about="#message"/>
+					</owl:unionOf> 
+				</owl:Class> 
+			</rdfs:domain>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:ObjectProperty rdf:ID="has_administrator">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#profile_test"/>
+			<rdfs:range rdf:resource="#administrator_test"/>
+		</owl:ObjectProperty>
+		
+		<owl:ObjectProperty rdf:ID="has_typeTest">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#profile_test"/>
+			<rdfs:range rdf:resource="#type_test"/>
+		</owl:ObjectProperty>
+		
+		<owl:DatatypeProperty rdf:ID="data_value_config">
+			<rdfs:domain rdf:resource="#profile_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="mode_answer">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#profile_test"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="number_of_attempts">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#profile_test"/>
+			<rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="battery">
+			<rdfs:subClassOf rdf:resource="&owl;Thing"/>
+		</owl:Class>
+		
+		<owl:ObjectProperty rdf:ID="has_profileTest">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#battery"/>
+			<rdfs:range rdf:resource="#profile_test"/>
+		</owl:ObjectProperty>
+		
+		<owl:ObjectProperty rdf:ID="has_user">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#battery"/>
+			<rdfs:range rdf:resource="#user"/>
+		</owl:ObjectProperty>
+		
+		<owl:DatatypeProperty rdf:ID="average_times">
+			<rdfs:domain rdf:resource="#battery"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="average_successes">
+			<rdfs:domain rdf:resource="#battery"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="mode_control">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#battery"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:Class rdf:ID="session">
+			<rdfs:subClassOf rdf:resource="&owl;Thing"/>
+		</owl:Class>
+		
+		<owl:ObjectProperty rdf:ID="has_battery">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="#battery"/>
+		</owl:ObjectProperty>
+		
+		<owl:DatatypeProperty rdf:ID="stimulus_given">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="answer_given">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="time_of_answer">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="&xsd;decimal"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="correction">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="number_of_elements">
+			<rdfs:domain rdf:resource="#session"/>
+			<rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+		</owl:DatatypeProperty>		
+		
+		<owl:Class rdf:ID="message">
+			<rdfs:subClassOf rdf:resource="&owl;Thing"/>
+		</owl:Class>
+		
+		<owl:DatatypeProperty rdf:ID="has_subject">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#message"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="has_content">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#message"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:DatatypeProperty rdf:ID="type_of_author">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#message"/>
+			<rdfs:range rdf:resource="&xsd;string"/>
+		</owl:DatatypeProperty>
+		
+		<owl:ObjectProperty rdf:ID="has_author">
+			<rdf:type rdf:resource="&owl;FunctionalProperty" />
+			<rdfs:domain rdf:resource="#message"/>
+			<rdfs:range >
+				<owl:Class> 
+					<owl:unionOf rdf:parseType="Collection"> 
+						<owl:Class rdf:about="#administrator_test"/> 
+						<owl:Class rdf:about="#administrator_site"/> 
+					</owl:unionOf> 
+				</owl:Class> 
+			</rdfs:range>
+		</owl:ObjectProperty>
+		
+	</rdf:RDF>

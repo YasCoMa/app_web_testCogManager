@@ -1,0 +1,13 @@
+﻿Neste teste você passará por 7 níveis que irão variar a quantidade de tentativas (seções) e a exigência de desempenho para passar por cada um deles.
+
+Instruções:
+
+1-Pressione o botão Ir;
+2-Digite seus dados e pressione continuar;
+3-Digite o código do grupo informado por quem está administrando a bateria de testes ou clique em começar teste aleatório e então irá carregar as configurações;
+4-Preste atenção na primeira série de letras, palavras ou números que irá aparecer e espere;
+5-Preste atenção na letra, número ou palavra que irá aparecer isolado(a) e espere;
+6-Então clique em sim ou não ou digite as teclas correspondentes a sim ou  não, para responder se o que foi mostrado isolado estava dentre a série mostrada ou não;
+8-Então aparecerá a correção e isso irá continuar até o nível do desempenho ser menor do que o esperado ou até terminar as seções do último nível.
+
+Boa sorte!

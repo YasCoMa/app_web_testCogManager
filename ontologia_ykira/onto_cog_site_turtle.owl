@@ -1,0 +1,241 @@
+@prefix :        <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_content>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_user>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> ;
+      rdfs:range <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_gender>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+      owl:equivalentProperty
+              <http://www.xmlns.com/foaf/0.1/gender> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_login>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site>)
+              ] ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_administrator>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> ;
+      rdfs:range <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_attempts>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_objective>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_control>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_name>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>)
+              ] ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+      owl:equivalentProperty
+              <http://www.xmlns.com/foaf/0.1/name> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#correction>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_age>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> ;
+      owl:equivalentProperty
+              <http://www.xmlns.com/foaf/0.1/age> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.xmlns.com/foaf/0.1/Person> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#mode_answer>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_date>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message>)
+              ] ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_password>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site>)
+              ] ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_status>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_researchCore>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#handedness>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_institute>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#answer_given>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#time_of_answer>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#decimal> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl>
+      a       owl:Ontology ;
+      rdfs:comment "An ontology for cognitive tests and execution data controlling of these tests" ;
+      rdfs:label " Cognitve Tests ontology " ;
+      dcterms:creator <http://yasmmin.4sql.net/foaf_me.rdf#me> ;
+      owl:versionInfo " 24/02/2013 " .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_description>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#uses_computer>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#user> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_area>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_subject>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.xmlns.com/foaf/0.1/Person> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_typeTest>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> ;
+      rdfs:range <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_times>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_field_config>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#data_value_config>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_profileTest>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> ;
+      rdfs:range <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#profile_test> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_test>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing ;
+      dcterms:subject <http://dbpedia.org/resource/Category:Cognitive_tests> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test>
+      a       owl:Class ;
+      rdfs:subClassOf <http://www.xmlns.com/foaf/0.1/Person> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#type_of_author>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#stimulus_given>
+      a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#average_successes>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_battery>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#battery> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#has_author>
+      a       owl:FunctionalProperty , owl:ObjectProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#message> ;
+      rdfs:range
+              [ a       owl:Class ;
+                owl:unionOf (<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_test> <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#administrator_site>)
+              ] .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#number_of_elements>
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session> ;
+      rdfs:range <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+
+<http://yasmmin.4sql.net/ontologia_ykira/onto_cog_site.owl#session>
+      a       owl:Class ;
+      rdfs:subClassOf owl:Thing .

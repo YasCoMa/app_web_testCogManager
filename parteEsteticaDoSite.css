@@ -1,0 +1,262 @@
+﻿	/* Imagens do cabeçalho */
+	table.fig_head {border-collapse: collapse; border-top: 15px ridge #9cc; border-bottom: 15px ridge #9cc; border-right: 20px dotted #000; border-left: 20px dotted #000;}
+	table.fig_head td {border-right:1px solid #006400;border-left:1px solid #006400;}
+	
+	/* Separador entre o cabeçalho e a tabela de conteúdo */
+	#separador {background:#066; border:1px solid #888; width:1000px; padding:0px auto; text-align:center; -moz-border-radius: 30px 30px 30px 30px ; -webkit-border-radius:30px 30px 30px 30px ; border-radius:30px 30px 30px 30px ; }
+	
+	/* Canto esquerdo - menu*/
+	#menu { background:#cff; width: 12em; padding: 0; list-style-type: none; margin: 0; font: 18px Times New Roman, sans-serif; border:2px solid #36c; -moz-border-radius: 30px 30px 30px 30px ; -webkit-border-radius:30px 30px 30px 30px ; border-radius:30px 30px 30px 30px ; }
+	#menu li {margin-left: 10; align: center; padding:5px;  }
+	#menu li 
+		/* Estética dos links principais do menu */
+		a.item{display: block; align: center;
+									 padding: 5px 5px 5px 0.5em; 
+									 font-size:18px;
+									 font-weight:bold;
+									 border-left: 10px solid #699; 
+									 border-right: 20px solid #6cc; 
+									 background-color: #099; 
+									 color: #9cc; 
+									 text-decoration: none; 
+									 -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px}
+					 
+		a.item_2{display: block; align: center;
+									 padding: 5px 5px 5px 0.5em; 
+									 font-size:18px;
+									 font-weight:bold;
+									 border-left: 20px solid #699; 
+									 border-right: 10px solid #6cc; 
+									 background-color: #9cc; 
+									 color: #099; 
+									 text-decoration: none; 
+									 -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px}
+	
+		/* Estética dos links do submenus */
+		a.link_subMenu:link, a.link_subMenu:visited {display: block; align: center;
+									 margin-left:30;
+									 padding: 5px 5px 5px 0.5em; 
+									 font-size:16px; 
+									 border-left: 1px solid #699; 
+									 border-right: 20px solid #6cc; 
+									 background-color: #09f; 
+									 color: #9cf; 
+									 text-decoration: none; 
+									 -moz-border-radius: 5px 15px 5px 15px ; -webkit-border-radius:5px 15px 5px 15px ; border-radius:5px 15px 5px 15px}
+					 
+		a.link_subMenu:hover, a.link_subMenu:active {display: block; align: center;
+									 padding: 5px 5px 5px 0.5em; 
+									 font-size:16px; 
+									 border-left: 20px solid #699; 
+									 border-right: 10px solid #6cc; 
+									 background-color: #9cf; 
+									 color: #09f; 
+									 text-decoration: none; 
+									 -moz-border-radius: 5px 15px 5px 15px ; -webkit-border-radius:5px 15px 5px 15px ; border-radius:5px 15px 5px 15px}
+	
+	/* Canto direito - conteúdo */
+	.medium {background:#ccf; border:1px solid #006; width:4000px; padding:0px auto; text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+	
+	/* Ajusta os títulos das seções */
+	.titulo {color:#ffc; margin:10px; padding=2px; font-size:20px; text-decoration:none; font-face: harrington; text-align: center;}
+	
+	/* Ajusta os parágrafos */
+	.sobre {margin:10px; padding=2px; font-size:18px; text-decoration:none;font-face: times new roman; text-align: justify;}
+	
+	/* Ajusta os títulos das explicações dos testes */
+	dt {margin:20px; padding=2px; font-size:18px; font-face: corbel; text-align: left; text-decoration:none;}
+	
+	/* Ajusta a área de fazer login */
+	#log, #form_lembra {background:#fff; border:3px solid #0000cd; width:200px; padding:0px auto;text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ;}
+	
+	/* Ajusta a tabela de consulta */
+	div.tabela_consulta {
+	    background: #fff;
+		border:2px solid #4682b4;
+		-moz-border-radius: 20px 20px 5px 5px ; -webkit-border-radius:20px 20px 5px 5px ; border-radius:20px 20px 5px 5px ;}
+	}
+	
+	div.tabela_consulta table.cabeca_fixa, div.tabela_consulta div.scroll_movel table{
+		width: 800px;
+		border-collapse: collapse;
+	}
+
+	div.tabela_consulta table.cabeca_fixa th, div.tabela_consulta div.scroll_movel table td{
+		white-space:nowrap;
+		border: 1px solid #444;
+		padding: 3px 5px;
+	}
+
+	div.tabela_consulta table.cabeca_fixa th{
+		background: #f0f8ff;
+	}
+
+	div.tabela_consulta div.scroll_movel table td{
+		background:fffaf0;
+	}
+	
+	div.tabela_consulta div.cabeca{
+	    width:700px;
+		overflow: auto;
+	}
+	
+	div.tabela_consulta div.scroll_movel{
+	    width:700px;
+		height: 200px;
+		overflow: auto;
+	}
+	
+	/* Ajusta as divs de formulário de gerenciamento */
+	#cadastro, #exclusao, #alteracao, #altera_adSite, #altera_adTeste, #cadastro0, #exclusao0, #alteracao0, #cadastro1, #exclusao1, #alteracao1 {background:#fff; border:2px solid #2e8b57; width:700px; padding:0px auto;text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+	
+	/* Ajusta o formulário da pessoa que vai fazer o teste */
+	#dados_pessoa_1, #dados_pessoa_2, #dados_pessoa_3 {background:#fff; border:2px dashed #87CEFA; width:500px; padding:0px auto;text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+	
+	/* ajusta o título do form extra para os dados específicos do teste em Grupo */
+	#title_extra {font-family: "Times New Roman", serif; color:#00868B; font-size: 14pt;}
+	
+	/* Ajusta o formulário extra para os dados específicos do teste em Grupo */
+	#dados_teste, #dados_teste_a {background:#FAF0E6; border-right:1px solid #00FA9A; border-left:1px solid #00FA9A; border-top:1px dashed #20B2AA; border-bottom:1px dashed #20B2AA; width:600px; padding:0px auto;text-align:center;}
+	
+	/* Estilo do container do gráfico */
+	#graph {background: #FFFFFF; float: center;}
+	
+	/* Ajusta o título que dá nome ao formulário */
+	.titulo_form {color:#5f9ea0; margin:10px; padding=2px; font-size:16pt; text-decoration:none; font-face: harrington; text-align: center;}
+	
+	/* Ajusta os links dos títulos das abas */
+	a.title_aba:link, a.title_aba:visited {display: block; align: center;
+		width:140px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 2px solid #699; 
+		background-color: #4682B4; 
+		color: #9cf; 
+		text-decoration: none; 
+		-moz-border-radius: 15px 15px 5px 5px ; -webkit-border-radius:15px 15px 5px 5px ; border-radius:15px 15px 5px 5px}
+					 
+	a.title_aba:hover, a.title_aba:active {display: block; align: center;
+		width:140px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 2px solid #699; 
+		background-color: #40E0D0; 
+		color: #191970; 
+		text-decoration: none; 
+		-moz-border-radius: 15px 15px 5px 5px ; -webkit-border-radius:15px 15px 5px 5px ; border-radius:15px 15px 5px 5px}
+					 
+	a.aba_setada{display: block; align: center;
+		width:140px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 2px solid #699; 
+		background-color: #E0FFFF; 
+		color: #191970; 
+		text-decoration: none; 
+		-moz-border-radius: 15px 15px 5px 5px ; -webkit-border-radius:15px 15px 5px 5px ; border-radius:15px 15px 5px 5px}
+	
+	#abas{width:750px;}
+	/* Ajusta o corpo das abas */
+	#grupo, #bateria, #secao,#tipo_teste {background:#E0FFFF; border:2px solid #699; width:750px; padding:0px auto;text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+	
+	/* Caixa do texto de ajuda e do app e o form de envio de mensagem*/
+	#info_novo_pesquisador, #area_mensagem, #ajuda_dados_2, #ajuda_dados_3, #ajuda_dados_4 {background:#F0F8FF; border:2px solid #191970; width:700px; padding:0px auto;text-align:center; -moz-border-radius: 30px 30px 30px 30px ; -webkit-border-radius:30px 30px 30px 30px ; border-radius:30px 30px 30px 30px ; }
+	
+	/*  Estilo de cada mensagem */
+	div.each_msg {background:#cccccc; border:1px solid #00ffff; width:450px; height: 100px; overflow: auto; padding:0px auto; text-align:center}
+		div.campos_msg {background: #ffffff; border: 1px solid #000000; width: 400px; height: 40px; overflow: auto; padding:0px auto;}
+	
+	/* minhas informações */
+	#info_me{background: #FFFFFF; border:1px dashed #009999; width:650px; height: 250px; padding:2px auto; text-align:center;  }
+	
+	/* Estilo do link comum */
+	a.link_comum:link, a.link_comum:visited {display: block; align: center;
+		margin-left: 300;
+		width:120px;
+		font-size:12px; 
+		border: 1px solid #CC6699; 
+		background-color: #FFFFFF; 
+		color: #CC6699; 
+		text-decoration: none; }
+					 
+	a.link_comum:hover, a.link_comum:active {display: block; align: center;
+		font-size:12px; 
+		border: 1px solid #CC6699; 
+		background-color: #CC6699; 
+		color: #FFFFFF; 
+		text-decoration: none; }
+		
+	/* Estilo do link de contatos */
+	a.link_contact:link, a.link_contact:visited {display: block; align: center;
+		margin-left:10;
+		width:50px;
+		font-size:12px; 
+		border: 1px solid #003366; 
+		background-color: #FFFFFF; 
+		color: #003366; 
+		text-decoration: none; 
+		float:left;}
+					 
+	a.link_contact:hover, a.link_contact:active {display: block; align: center;
+		font-size:12px; 
+		border: 1px solid #003366; 
+		background-color: #003366; 
+		color: #FFFFFF; 
+		text-decoration: none; }
+	
+	/* Ajusta os links das áreas de mensagem e testAdd */
+	a.link_normal:link, a.link_normal:visited {display: block; align: center;
+		width:150px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 1px dashed #ffffff; 
+		background-color: #0000ff; 
+		color: #ffffff; 
+		text-decoration: none; }
+					 
+	a.link_normal:hover, a.link_normal:active {display: block; align: center;
+		width:150px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 1px dashed #0000ff; 
+		background-color: #ffffff; 
+		color: #0000ff; 
+		text-decoration: none; }
+					 
+	a.link_setado{display: block; align: center;
+		width:150px;
+		margin-left:20;
+		padding: 5px 5px 5px 0.5em; 
+		font-size:16px; 
+		border: 1px dashed #0000ff; 
+		background-color: #ffffff; 
+		color: #0000ff; 
+		text-decoration: none; }
+	
+	/* painel de visualizacao de msg e estilo de cada uma */
+	#ver_msg {background: #6699ff; float: center; border:2px dashed #191970; width:500px; height: 525px; padding:2px auto; text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+		#res_pesquisa_msg {background: #6699ff; float: center; width:500px; height: 450px; overflow: auto; padding:2px auto; text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ;}
+		#params_pesquisa_msg {background: #66ffff; border: 1px dashed #ffffff; width: 490px; height: 50px;}
+	
+	/* painel de testes a serem feitos */
+	#ver_testAdd {background: #6699FF; float: center; border:2px dashed #191970; width:500px; height: 475px; padding:2px auto; text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ; }
+		#res_pesquisa_testAdd {background: #6699FF; float: center; width:500px; height: 450px; overflow: auto; padding:2px auto; text-align:center; -moz-border-radius: 20px 20px 20px 20px ; -webkit-border-radius:20px 20px 20px 20px ; border-radius:20px 20px 20px 20px ;}
+		
+	/* Caixa dos apps */
+	#app_1, #app_2, #app_3  {background:#F0F8FF; border:2px solid #191970; width:500px; height:200px ;padding:0px auto;text-align:center; -moz-border-radius: 30px 30px 30px 30px ; -webkit-border-radius:30px 30px 30px 30px ; border-radius:30px 30px 30px 30px ; }
+	
+	/* Edit text da série de números de reconhecimento */
+	#v {font-family:sans-serif; font-size:14pt; border-width:2px; border-style:dashed; color:#48D1CC; text-align:center;}
+	
+	/* Edit text do número sozinho */
+	#v1, #elemento {font-family:sans-serif; font-size:14pt; border-width:1px; border-style:solid; color:#1E90FF; text-align:center;}
+	
+	/* Estético do documento em geral */
+	body {margin:0px; padding:0;  text-align:center; }
+	#tudo {width: 1000px; height:800; margin:0 auto; text-align:left;}
+	#conteudo {padding: 1px; }
